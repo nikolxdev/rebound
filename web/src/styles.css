@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@fontsource-variable/anybody/standard.css";
+@import "@fontsource-variable/hanken-grotesk";
+
+@theme {
+  --font-display: "Anybody Variable", "Arial Narrow", sans-serif;
+  --font-sans: "Hanken Grotesk Variable", system-ui, sans-serif;
+  --color-ink: #0b1220;
+  --color-ink-2: #131d31;
+  --color-turf: #1f4fa3;
+  --color-turf-dark: #173b7a;
+  --color-chalk: #f4f1ea;
+  --color-paper: #ece6d9;
+  --color-ball: #e2f54b;
+  --color-muted: #8b94a7;
+  --color-clay: #c4562f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-ink font-sans text-chalk antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-ball);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility font-wide {
+  font-family: var(--font-display);
+  font-stretch: 118%;
+  @media (width >= 40rem) {
+    font-stretch: 140%;
+  }
+}
+
+@utility font-narrow {
+  font-family: var(--font-display);
+  font-stretch: 62%;
+}
+
+@utility font-name {
+  font-family: var(--font-display);
+  font-stretch: 100%;
+  letter-spacing: 0.01em;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ticket-edge {
+  --notch: radial-gradient(circle at 50% 0, transparent 7px, var(--color-chalk) 7.5px);
+  background: var(--notch) 0 0 / 18px 100% repeat-x;
+}

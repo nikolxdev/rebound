@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: rebound-api-eu
+    runtime: node
+    plan: free
+    region: frankfurt
+    rootDir: api
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        sync: false
+      - key: WEB_ORIGIN
+        value: https://nikolxdev.github.io
+      - key: WEB_URL
+        value: https://nikolxdev.github.io/rebound/
+      - key: OWNER_EMAIL
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        value: Rebound <onboarding@resend.dev>

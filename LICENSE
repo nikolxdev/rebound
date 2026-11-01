@@ -1,0 +1,25 @@
+Copyright (c) 2026 Nikola Vojvodić (https://nikolxdev.github.io/)
+All rights reserved.
+
+Rebound is published so that its code can be read and evaluated as part of the
+author's portfolio. It is not open source, and no license is granted except as
+written below.
+
+You may:
+- view the source code on GitHub and in your browser;
+- download it and run it on your own computer, only to evaluate the author's
+  work (for example, while reviewing a job application).
+
+You may not, without prior written permission from the author:
+- copy, publish, host or distribute the code, design, text or images, in whole
+  or in part;
+- create, publish or sell modified versions or works based on it;
+- use it for any commercial purpose;
+- remove or change the copyright notices, the author credits or the author
+  marks embedded in the source files and images.
+
+Third-party components keep their own licenses: React, React Router, GSAP,
+Tailwind CSS, Express and the other npm packages listed in package.json, and the
+Anybody and Hanken Grotesk fonts (SIL Open Font License).
+
+For permission, write to nikolavojvodic07@gmail.com.
