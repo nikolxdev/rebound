@@ -16,14 +16,14 @@ export default function Footer() {
           <p className="mt-4 text-chalk">Adresa</p>
           <p className="mt-2">Kej Morave, Čačak</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <a className="hover:text-chalk" href="https://github.com/nikolxdev/rebound" rel="noopener" target="_blank">
+        <div className="flex flex-col items-start">
+          <a className="py-2 hover:text-chalk" href="https://github.com/nikolxdev/rebound" rel="noopener" target="_blank">
             Kod na GitHubu
           </a>
-          <a className="hover:text-chalk" href="https://nikolxdev.github.io/" rel="author">
+          <a className="py-2 hover:text-chalk" href="https://nikolxdev.github.io/" rel="author">
             Napravio Nikola Vojvodić
           </a>
-          <Link className="hover:text-chalk" to="/admin">
+          <Link className="py-2 hover:text-chalk" to="/admin">
             Za osoblje
           </Link>
         </div>
