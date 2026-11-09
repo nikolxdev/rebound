@@ -1,8 +1,16 @@
 # Rebound
 
+![Tests](https://github.com/nikolxdev/rebound/actions/workflows/ci.yml/badge.svg)
+
 Booking app for a made-up padel club in Čačak. Pick a court, a day and a time, get a booking code and a page where you can view or cancel it. Staff log in to see the day, move bookings around and block courts.
 
 **Live:** https://nikolxdev.github.io/rebound/
+
+![Rebound home page](docs/home.webp)
+
+![Picking a time on Rebound](docs/booking.webp)
+
+The staff page is at `/#/admin`, the demo login is written on the sign-in page.
 
 ## Stack
 

@@ -258,8 +258,7 @@ export default function Booking({ config, courts, selected, onSelect, reduced }:
           </div>
 
           <form ref={formRef} onSubmit={submit} className="scroll-mt-6 self-start rounded-sm border border-chalk/15 bg-ink-2 p-6">
-            <p className="font-narrow text-sm uppercase tracking-[0.25em] text-ball">Rezervacija</p>
-            <p className="mt-2 font-wide text-2xl font-extrabold">
+            <p className="font-wide text-2xl font-extrabold">
               {court.name}
               <span className="mt-1 block font-sans text-base font-normal text-chalk/80 first-letter:uppercase">
                 {niceDate(date)}

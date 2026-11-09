@@ -54,8 +54,7 @@ export default function Courts({ courts, config, today, reduced, onPick }: Props
     <section id="tereni" ref={section} className="overflow-hidden bg-ink py-20 lg:flex lg:h-screen lg:items-center lg:py-0">
       <div ref={track} className="flex snap-x snap-mandatory scroll-px-5 gap-6 overflow-x-auto px-5 no-scrollbar lg:w-max lg:snap-none lg:gap-10 lg:overflow-visible lg:px-[8vw]">
         <div className="flex w-[78vw] shrink-0 snap-start flex-col justify-center sm:w-[50vw] lg:w-[30vw]">
-          <p className="font-narrow text-sm uppercase tracking-[0.3em] text-ball">Tereni</p>
-          <h2 className="mt-3 font-wide text-[2rem] font-extrabold leading-[0.95] sm:text-4xl lg:text-6xl">Četiri terena, četiri imena.</h2>
+          <h2 className="font-wide text-[2rem] font-extrabold leading-[0.95] sm:text-4xl lg:text-6xl">Četiri terena, četiri imena.</h2>
           <p className="mt-5 max-w-sm text-muted">
             Svaki teren nosi ime po onome što se vidi iz Čačka: reka i tri planine. Dva su pod krovom, dva napolju.
           </p>
